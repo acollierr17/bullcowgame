@@ -102,20 +102,14 @@ bool FBullCowGame::IsIsogram(FString Word) const
 
 bool FBullCowGame::IsLowercase(FString Word) const 
 {
-	// if word length is zero  false
-	if (Word.length() == 0) return false;
-
-	// TODO fix so if ANY uppercase letters pop up, return false
-	for (auto Letter : Word) // loop through characters in word and check if lowercase
+	for (auto Letter : Word)
 	{
-		if (!islower(Letter))
+		if (!islower(Letter)) // if not a lowercase character
 		{
-			return false;  // if char is lowercase or there's a space, we do NOT have a valid input
-		}
-		else { 
-			return true;  // otherwise, we have a valid input
+			return false;
 		}
 	}
+	return true;
 }
 
 FBullCowGame::FBullCowGame() { Reset(); }
