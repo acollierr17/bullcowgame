@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/ANTHONY/Documents/UnrealCourse/SECTION_02/BullCowGame/FBullCowGame.h
+string
+-
+
+C:/Users/ANTHONY/Documents/UnrealCourse/SECTION_02/BullCowGame/main.cpp
+pch.h
+C:/Users/ANTHONY/Documents/UnrealCourse/SECTION_02/BullCowGame/pch.h
+iostream
+-
+string
+-
+FBullCowGame.h
+C:/Users/ANTHONY/Documents/UnrealCourse/SECTION_02/BullCowGame/FBullCowGame.h
+
+C:/Users/ANTHONY/Documents/UnrealCourse/SECTION_02/BullCowGame/pch.h
+
