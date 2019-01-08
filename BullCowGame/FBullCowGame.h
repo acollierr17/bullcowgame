@@ -1,10 +1,17 @@
+/*
+	This file defines mostly all the game logic for this application. All
+	the actual logic is found in the FBullCowGame.cpp file.
+
+	The game is a simple world game based on Mastermind.
+*/
 #pragma once
+
 #include <string>
 
+// to make syntax Unreal friendly
 using FString = std::string;
 using int32 = int;
 
-// all values initialized to zero
 struct FBullCowCount 
 {
 	int32 Bulls = 0;
@@ -31,13 +38,11 @@ public:
 	bool IsGameWon() const;
 	EGuessStatus CheckGuessValidity(FString) const;
 
-	void Reset(); // TODO make a more rich return value
+	void Reset();
 	FBullCowCount SubmitValidGuess(FString);
 
-// ignore this for now; focus on interface above
 private:
-	// these are compile time values
-	// see constructor for initiliazation (similar to js)
+	// see constructor for initialization
 	int32 MyCurrentTry;
 	int32 MyMaxTries;
 	FString MyHiddenWord;
